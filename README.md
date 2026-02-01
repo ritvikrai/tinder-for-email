@@ -100,6 +100,19 @@ tinder-for-email/
 - **API**: Google Gmail API
 - **Auth**: OAuth 2.0
 
+## 📋 Quick Start Checklist
+
+After cloning this repo, complete these steps:
+
+- [ ] **Create Google Cloud Project** — Go to [console.cloud.google.com](https://console.cloud.google.com/)
+- [ ] **Enable Gmail API** — APIs & Services → Library → Search "Gmail API" → Enable
+- [ ] **Create OAuth Credentials** — APIs & Services → Credentials → Create OAuth 2.0 Client ID (Web app)
+- [ ] **Add Redirect URI** — Set to `http://localhost:3001/auth/google/callback`
+- [ ] **Configure `.env`** — Copy `server/.env.example` to `server/.env` and add your Client ID & Secret
+- [ ] **Create "Review" Label** — In Gmail, create a label named "Review"
+- [ ] **Install & Run** — `npm run install-all && npm run dev`
+- [ ] **Open App** — Visit [http://localhost:5173](http://localhost:5173)
+
 ## Notes
 
 - The app stores auth tokens in memory (they'll be lost on server restart)
